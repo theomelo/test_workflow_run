@@ -1,0 +1,14 @@
+name: React to build
+
+on:
+  workflow_run:
+    workflows: [Build]
+    types: [completed]
+
+jobs:
+  on-sucess:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Responds do "Hi"
+        run: |
+          echo "Ohai!"

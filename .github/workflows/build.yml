@@ -1,0 +1,13 @@
+name: Build
+
+on:
+  pull_request:
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hi
+        run: |
+          echo "Hi"
