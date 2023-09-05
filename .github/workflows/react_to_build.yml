@@ -2,11 +2,8 @@ name: React to build
 
 on:
   workflow_run:
-    workflows: [Build]
-    types: [completed]
-    branches:
-      - 'test-*'
-      - 'main'
+    workflows: ['Build']
+    types: ['completed']
 
 jobs:
   on-sucess:

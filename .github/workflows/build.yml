@@ -11,3 +11,4 @@ jobs:
       - name: Say Hi
         run: |
           echo "Hi"
+          sleep 2
